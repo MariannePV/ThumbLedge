@@ -1,0 +1,26 @@
+﻿<Window x:Class="ThumbLedge.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThumbLedge.View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent">
+    <Grid>
+        <Border CornerRadius="20" Background="CadetBlue"/>
+        
+        <!--<MediaElement Source="Videos/backgroundStart.mp4"
+                    Name="backgroundVideo"
+                    LoadedBehavior="Play"
+                    UnloadedBehavior="Stop"
+                    Stretch="Fill"/>-->
+
+        <Button x:Name="CloseApp"
+                Style="{StaticResource exitApp}"
+                Click="CloseApp_Click"/>
+    </Grid>
+</Window>
