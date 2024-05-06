@@ -23,5 +23,14 @@ namespace ThumbLedge.View
         {
             InitializeComponent();
         }
+
+        //Això s'ha de millorar
+        private void backgroundVideo_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            if (sender is MediaElement me)
+            {
+                me.Position = new TimeSpan(0, 0, 0, 0, 10);
+            }
+        }
     }
 }

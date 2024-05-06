@@ -5,7 +5,10 @@
         
         <Setter Property="Background"
                 Value="LightGray"/>
-        
+
+        <Setter Property="FontFamily"
+                Value="Nanum Gothic"/>
+
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -34,6 +37,7 @@
         
     </Style>
 
+    <!-- Exit button -->
     <ImageBrush x:Key="exitWhite"
              ImageSource="/Images/exit_white.png"
              Stretch="None" />
@@ -41,7 +45,16 @@
     <ImageBrush x:Key="exitRed"
              ImageSource="/Images/exit_red.png"
              Stretch="None" />
+    
+    <!-- Minimize button -->
+    <ImageBrush x:Key="minimizeWhite"
+             ImageSource="/Images/minimize_white.png"
+             Stretch="None" />
 
+    <ImageBrush x:Key="minimizeYellow"
+             ImageSource="/Images/minimize_yellow.png"
+             Stretch="None" />
+    
     <Style x:Key="exitApp"
     TargetType="{x:Type Button}">
 
@@ -49,12 +62,10 @@
          Value="40" />
         <Setter Property="Width"
          Value="40" />
-        <Setter Property="HorizontalAlignment"
-         Value="Right" />
-        <Setter Property="VerticalAlignment"
-         Value="Top" />
         <Setter Property="Margin"
          Value="0,15,15,0" />
+        <Setter Property="Cursor"
+         Value="Hand" />
 
         <Setter Property="Template">
 
@@ -98,5 +109,106 @@
 
     </Style>
 
+    <Style x:Key="minimizeApp"
+    TargetType="{x:Type Button}">
+
+        <Setter Property="Height"
+         Value="2" />
+        <Setter Property="Width"
+         Value="20" />
+        <Setter Property="Margin"
+         Value="0,15,15,0" />
+        <Setter Property="Cursor"
+         Value="Hand" />
+
+        <Setter Property="Template">
+
+            <Setter.Value>
+
+                <ControlTemplate TargetType="{x:Type Button}">
+
+                    <Border x:Name="border"
+                     BorderThickness="0"
+                     Background="{StaticResource minimizeWhite}">
+
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+
+                        <Trigger Property="IsMouseOver"
+                          Value="True">
+
+                            <Setter Property="Background"
+                             TargetName="border"
+                             Value="{StaticResource minimizeYellow}" />
+
+                        </Trigger>
+
+                        <Trigger Property="IsPressed"
+                          Value="True">
+
+                            <Setter Property="Background"
+                             TargetName="border"
+                             Value="{StaticResource minimizeYellow}" />
+
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+
+            </Setter.Value>
+
+        </Setter>
+
+    </Style>
+
+    <Style x:Key="linkBtn"
+       TargetType="{x:Type Button}">
+
+        <Setter Property="Foreground"
+                Value="#272B2F"/>
+
+        <Setter Property="Background"
+            Value="Transparent"/>
+
+        <Setter Property="FontFamily"
+            Value="Nanum Gothic"/>
+
+        <Setter Property="Padding"
+                Value="0"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                        BorderBrush="Transparent"
+                        BorderThickness="0">
+                        <ContentPresenter HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Setter Property="Background"
+            Value="Transparent"/>
+
+        <Setter Property="FontFamily"
+            Value="Nanum Gothic"/>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver"
+                 Value="True">
+                <Setter Property="Background"
+                    Value="Transparent"/>
+                <Setter Property="Cursor"
+                    Value="Hand"/>
+                <Setter Property="FontWeight"
+                        Value="Bold"/>
+            </Trigger>
+        </Style.Triggers>
+
+    </Style>
 
 </ResourceDictionary>
