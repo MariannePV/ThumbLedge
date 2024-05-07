@@ -72,3 +72,14 @@ C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedg
 C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedge\obj\Debug\View\SignUp.g.cs
 C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedge\obj\Debug\View\SignUp.baml
 C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedge\obj\Debug\Styles\TextBlock.baml
+C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedge\obj\Debug\View\LostPassword.g.cs
+C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedge\obj\Debug\View\LostPassword.baml
+C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedge\bin\Debug\ThumbLedge.exe.manifest
+C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedge\bin\Debug\ThumbLedge.application
+C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedge\obj\Debug\ThumbLedge.exe.manifest
+C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedge\obj\Debug\ThumbLedge.application
+C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedge\obj\Debug\View\Startup.g.cs
+C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedge\obj\Debug\View\Startup.baml
+C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedge\obj\Debug\View\Dashboard.g.cs
+C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedge\obj\Debug\View\Dashboard.baml
+C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedge\obj\Debug\Styles\Image.baml

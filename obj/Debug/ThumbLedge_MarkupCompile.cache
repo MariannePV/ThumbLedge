@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\maria\Documents\DAM\2n DAM\M13 - Projecte\Projecte\ThumbLedge\ThumbLedge\App.xaml
-8-853053051
-31570337014
-152076447180
+12-1861720391
+4-1438590388
+21-1454675818
 14189413357
-Styles\Button.xaml;Styles\TextBlock.xaml;Styles\TextBox.xaml;Utilities\DataTemplate.xaml;View\Home.xaml;View\Login.xaml;View\MainWindow.xaml;View\SignUp.xaml;
+Styles\Button.xaml;Styles\Image.xaml;Styles\TextBlock.xaml;Styles\TextBox.xaml;Utilities\DataTemplate.xaml;View\Dashboard.xaml;View\Home.xaml;View\Login.xaml;View\LostPassword.xaml;View\MainWindow.xaml;View\SignUp.xaml;View\Startup.xaml;
 
 False
 

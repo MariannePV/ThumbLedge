@@ -37,6 +37,52 @@
         
     </Style>
 
+    <Style x:Key="inteligencia"
+           TargetType="{x:Type Button}">
+        
+        <Setter Property="Foreground"
+                Value="White"/>
+
+        <Setter Property="FontSize"
+                Value="20"/>
+
+        <Setter Property="VerticalAlignment"
+                Value="Center"/>
+
+        <Setter Property="HorizontalAlignment"
+                Value="Center"/>
+
+        <Setter Property="FontWeight"
+                Value="Bold"/>
+        
+        <Setter Property="Cursor"
+                Value="Hand" />
+        
+        <Setter Property="Background"
+                Value="Transparent"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="Transparent">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver"
+                     Value="True">
+                <Setter Property="FontSize"
+                        Value="35"/>
+                <Setter Property="Cursor"
+                        Value="Hand"/>
+            </Trigger>
+        </Style.Triggers>
+
+    </Style>
+
     <!-- Exit button -->
     <ImageBrush x:Key="exitWhite"
              ImageSource="/Images/exit_white.png"

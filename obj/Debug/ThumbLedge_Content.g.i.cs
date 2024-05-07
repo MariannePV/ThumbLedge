@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("videos/backgrounddashboard.wmv")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("videos/backgroundstart.wmv")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("mongocrypt.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/mongodb.libmongocrypt.1.8.2/runtimes/win/native/mongocrypt.dll")]

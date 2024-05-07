@@ -3,6 +3,10 @@
                     xmlns:vm="clr-namespace:ThumbLedge.ViewModel"
                     xmlns:view="clr-namespace:ThumbLedge.View">
 
+    <DataTemplate DataType="{x:Type vm:StartupVM}">
+        <view:Startup/>
+    </DataTemplate>
+    
     <DataTemplate DataType="{x:Type vm:HomeVM}">
         <view:Home/>
     </DataTemplate>
@@ -14,5 +18,13 @@
     <DataTemplate DataType="{x:Type vm:SignUpVM}">
         <view:SignUp/>
     </DataTemplate>
-    
+
+    <DataTemplate DataType="{x:Type vm:LostPasswordVM}">
+        <view:LostPassword/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:DashboardVM}">
+        <view:Dashboard/>
+    </DataTemplate>
+
 </ResourceDictionary>

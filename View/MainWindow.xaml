@@ -17,41 +17,9 @@
     <Window.DataContext>
         <vm:MainWindowVM/>
     </Window.DataContext>
-    
-    <Grid>        
-        <!-- Fem que el vídeo també tingui les cantonades rodones -->
-        <Border x:Name="border" BorderThickness="1" BorderBrush="#FF000000" CornerRadius="20"
-        HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Grid>
-                <Border Name="mask" Background="Black" CornerRadius="{Binding ElementName=border, Path=CornerRadius}"/>
-                <Grid>
-                    <Grid.OpacityMask>
-                        <VisualBrush Visual="{Binding ElementName=mask}"/>
-                    </Grid.OpacityMask>
-                    <MediaElement Name="backgroundVideo" HorizontalAlignment="Left" Height="450" Width="800"
-                          VerticalAlignment="Top"  Source="{Binding BackgroundURL}"
-                          Stretch="UniformToFill" LoadedBehavior="Play" MediaEnded="backgroundVideo_MediaEnded"/>
-                </Grid>
-            </Grid>
-        </Border>
-        
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
-            <Button Style="{StaticResource minimizeApp}"
-                    Command="{Binding MinimizeAppCommand}"
-                    CommandParameter="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"/>
-
-            <!-- Passem per paràmetre la instància actual de la finestra -->
-            <Button Style="{StaticResource exitApp}"
-                    Command="{Binding CloseAppCommand}"
-                    CommandParameter="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"/>
-        </StackPanel>
-
-        <Grid Height="300" Width="600">
-            <ContentControl x:Name="Pages"
-                            Content="{Binding CurrentView}"/>
-            
-        </Grid>
-        
+    <Grid>
+        <ContentControl x:Name="MainPages"
+                        Content="{Binding MainView}"/>
     </Grid>
 </Window>

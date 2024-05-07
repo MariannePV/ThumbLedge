@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIMongoDB", "APIMongoDB\APIMongoDB.csproj", "{F00AEEEA-2A8E-4338-99F6-3FA5950CCDF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F00AEEEA-2A8E-4338-99F6-3FA5950CCDF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F00AEEEA-2A8E-4338-99F6-3FA5950CCDF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F00AEEEA-2A8E-4338-99F6-3FA5950CCDF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F00AEEEA-2A8E-4338-99F6-3FA5950CCDF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DE82F73-C3CB-469F-9165-77690B43DD0E}
+	EndGlobalSection
+EndGlobal

@@ -21,99 +21,28 @@ namespace ThumbLedge.ViewModel
     {
         private readonly PageModel _pageModel;    //Model
 
-        public object CurrentView
+        public object MainView
         {
-            get { return _pageModel.CurrentView; }
-            set { _pageModel.CurrentView = value; OnPropertyChanged(); }
+            get { return _pageModel.MainView; }
+            set { _pageModel.MainView = value; OnPropertyChanged(); }
         }
 
-        public string Username
-        {
-            get { return _pageModel.Username; }
-            set { _pageModel.Username = value; OnPropertyChanged(); }
-        }
-
-        public bool LoggedIn
-        {
-            get { return _pageModel.LoggedIn; }
-            set { _pageModel.LoggedIn = value; OnPropertyChanged(); }
-        }
-
-        public Uri BackgroundURL
-        {
-            get { return _pageModel.BackgroundURL; }
-            set { _pageModel.BackgroundURL = value; OnPropertyChanged(); }
-        }
-
-        public ICommand CloseAppCommand { get; set; }
-
-        public ICommand MinimizeAppCommand { get; set; }
-
-        HomeVM homeVM = new HomeVM();
-        LoginVM loginVM = new LoginVM();
-        SignUpVM signUpVM = new SignUpVM();
+        StartupVM startupVM = new StartupVM();
+        DashboardVM dashboardVM = new DashboardVM();
 
         public MainWindowVM()
         {
             _pageModel = new PageModel();
-            CloseAppCommand = new RelayCommand(CloseApp);
-            MinimizeAppCommand = new RelayCommand(MinimizeApp);
-            LoadVideo();
 
-            //Definim com a vista predeterminada la de HomeVM
-            CurrentView = homeVM;
+            MainView = startupVM;
 
-            //Creem una instància de homeVM i ens subscribim a l'event
-            homeVM.StartButtonClicked += HomeVM_StartButtonClicked;
-            loginVM.SignUpClicked += LoginVM_SignUpClicked;
-            signUpVM.LoginButtonClicked += SignUpVM_LoginButtonClicked;
+            //Ens subscribim a l'event quan des de startup presionen el botó de Log in
+            startupVM.LoginClicked += StartupVM_LoginClicked;
         }
 
-        private void SignUpVM_LoginButtonClicked(object sender, EventArgs e)
+        private void StartupVM_LoginClicked(object sender, EventArgs e)
         {
-            CurrentView = loginVM;
-        }
-
-        private void LoginVM_SignUpClicked(object sender, EventArgs e)
-        {
-            CurrentView = signUpVM;
-        }
-
-        private void HomeVM_StartButtonClicked(object sender, EventArgs e)
-        {
-            //Canviem la vista actual a LoginVM
-            CurrentView = loginVM;
-        }
-
-        private void MinimizeApp(object parameter)
-        {
-            if (parameter is Window window)
-            {
-                window.WindowState = WindowState.Minimized;
-            }
-        }
-
-        private void CloseApp(object parameter)
-        {
-            //Passem per paràmetre la finestra
-            var window = parameter as Window;
-            window?.Close();
-        }
-
-        private void LoadVideo()
-        {
-            try
-            {
-                string video = "../../Videos/backgroundStart.wmv";
-
-                //Creem l'URI mitjançant una ruta relativa
-                Uri obj = new Uri(video, UriKind.Relative);
-                BackgroundURL = obj;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("ERROR: " + ex.Message);
-            }
+            MainView = dashboardVM;
         }
     }
 }
