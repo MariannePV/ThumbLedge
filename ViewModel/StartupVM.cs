@@ -7,6 +7,8 @@ using System.Windows.Input;
 using System.Windows;
 using ThumbLedge.Model;
 using ThumbLedge.Utilities;
+using ThumbLedge.Entities;
+using ThumbLedge.API;
 
 namespace ThumbLedge.ViewModel
 {
@@ -40,7 +42,7 @@ namespace ThumbLedge.ViewModel
 
         public StartupVM()
         {
-            _pageModel = new PageModel();
+            _pageModel = PageModel.Instance;
             CloseAppCommand = new RelayCommand(CloseApp);
             MinimizeAppCommand = new RelayCommand(MinimizeApp);
             LoadVideo();
@@ -59,8 +61,9 @@ namespace ThumbLedge.ViewModel
             loginVM.EnterClicked += enterClicked;
         }
 
+        //Es clica el botó per iniciar sessió
         private void enterClicked(object sender, EventArgs e)
-        {
+        {            
             LoginClicked?.Invoke(this, EventArgs.Empty);
         }
 

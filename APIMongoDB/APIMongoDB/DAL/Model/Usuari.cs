@@ -10,16 +10,24 @@ namespace APIMongoDB.DAL.Model
         [BsonRepresentation(BsonType.ObjectId)]
         public String _id { get; set; }
 
-        [BsonElement("nom")]
-        public String Nom { get; set; }
+        [BsonElement("username")]
+        public String Username { get; set; }
 
         [BsonElement("password")]
         public String Password { get; set; }
 
-        public Usuari(string nom, string password)
+        [BsonElement("fullName")]
+        public String FullName { get; set; }
+
+        [BsonElement("email")]
+        public String Email { get; set; }
+
+        public Usuari(string username, string password, string fullName, string email)
         {
-            this.Nom = nom;
+            this.Username = username;
             this.Password = password;
+            this.FullName = fullName;
+            this.Email = email;
         }
 
         public Usuari() { }

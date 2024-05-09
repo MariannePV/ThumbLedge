@@ -29,19 +29,27 @@ namespace ThumbLedge.ViewModel
 
         StartupVM startupVM = new StartupVM();
         DashboardVM dashboardVM = new DashboardVM();
+        BrainVM brainVM = new BrainVM();
 
         public MainWindowVM()
         {
-            _pageModel = new PageModel();
+            _pageModel = PageModel.Instance;
 
             MainView = startupVM;
 
             //Ens subscribim a l'event quan des de startup presionen el botó de Log in
             startupVM.LoginClicked += StartupVM_LoginClicked;
+            dashboardVM.LogoutClicked += DashboardVM_LogoutClicked;
+        }
+
+        private void DashboardVM_LogoutClicked(object sender, EventArgs e)
+        {
+            MainView = startupVM;
         }
 
         private void StartupVM_LoginClicked(object sender, EventArgs e)
         {
+            dashboardVM.ThumbLedgeView = brainVM;
             MainView = dashboardVM;
         }
     }

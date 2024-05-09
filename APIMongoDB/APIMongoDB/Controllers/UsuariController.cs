@@ -11,37 +11,38 @@ namespace APIMongoDB.Controllers
     [ApiController]
     public class UsuariController
     {
-        // GET: api/<UsuariController>
         [HttpGet]
         public List<Usuari> Get()
         {
             return UsuariServei.GetAll().ToList();
         }
 
-        //// GET api/<UsuariController>/5
-        //[HttpGet("{id}")]
-        //public Usuari Get(String id)
-        //{
-        //    UsuariServei us = new UsuariServei();
-        //    //return us.ge
-        //}
+        [HttpGet("{id}")]
+        public Usuari Get(String id)
+        {
+            UsuariServei us = new UsuariServei();
+            return us.Get(id);
+        }
 
-        //// POST api/<UsuariController>
-        //[HttpPost]
-        //public void Post([FromBody] string value)
-        //{
-        //}
+        [HttpPost]
+        public void Post([FromBody] Usuari user)
+        {
+            UsuariServei us = new UsuariServei();
+            us.Add(user);
+        }
 
-        //// PUT api/<UsuariController>/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
+        [HttpPut("{id}")]
+        public void Put([FromBody] Usuari user, string id)
+        {
+            UsuariServei us = new UsuariServei();
+            us.Update(user, id);
+        }
 
-        //// DELETE api/<UsuariController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
+        [HttpDelete("{id}")]
+        public void Delete(string id)
+        {
+            UsuariServei us = new UsuariServei();
+            us.Delete(id);
+        }
     }
 }

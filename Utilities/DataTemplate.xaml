@@ -27,4 +27,12 @@
         <view:Dashboard/>
     </DataTemplate>
 
+    <DataTemplate DataType="{x:Type vm:BrainVM}">
+        <view:Brain/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:ProfileVM}">
+        <view:Profile/>
+    </DataTemplate>
+
 </ResourceDictionary>

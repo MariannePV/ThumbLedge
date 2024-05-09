@@ -12,8 +12,9 @@
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
-        Background="Transparent">
-    
+        Background="Transparent"
+        ResizeMode="CanMinimize">
+
     <Window.DataContext>
         <vm:MainWindowVM/>
     </Window.DataContext>
@@ -21,5 +22,7 @@
     <Grid>
         <ContentControl x:Name="MainPages"
                         Content="{Binding MainView}"/>
+        
+        <Border Name="TopBorder" Height="20" Width="800" VerticalAlignment="Top" Background="White" Opacity="0" Cursor="Hand" MouseLeftButtonDown="Border_MouseLeftButtonDown"/>
     </Grid>
 </Window>

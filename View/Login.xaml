@@ -12,19 +12,21 @@
 
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             
-            <TextBox Style="{StaticResource txtBoxStyle}"/>
+            <TextBox Text="{Binding usernameView}" Style="{StaticResource txtBoxStyle}" TabIndex="0"/>
             <TextBlock Text="Username" Style="{StaticResource placeholder}" Margin="16, -60, 0, 0"/>
             
-            <TextBox Style="{StaticResource txtBoxStyle}"/>
+            <PasswordBox x:Name="passwordBox" Style="{StaticResource pswdBoxStyle}" TabIndex="1"/>
             <TextBlock Text="Password" Style="{StaticResource placeholder}" Margin="16, -60, 0, 0"/>
-            
-            <Button Content="Log in" Style="{StaticResource btnStyle}" Height="40" Width="210" FontSize="20" FontFamily="NanumGothic" Command="{Binding EnterCommand}"/>
 
-            <Button Content="Forgot password?" Style="{StaticResource linkBtn}" Margin="0, 10, 0, 5" HorizontalAlignment="Left" Command="{Binding ForgotPasswordCommand}"/>
+            <TextBlock Text="We couldn't log in. Check your username and password." Style="{StaticResource errorMssg}" Margin="0, -10, 0, 5" Visibility="{Binding errorMssg}"/>
+
+            <Button Content="Log in" Style="{StaticResource btnStyle}" Height="40" Width="210" FontSize="20" FontFamily="NanumGothic" Command="{Binding EnterCommand}" CommandParameter="{Binding ElementName=passwordBox}" TabIndex="2"/>
+
+            <Button Content="Forgot password?" Style="{StaticResource linkBtn}" Margin="0, 10, 0, 5" HorizontalAlignment="Left" Command="{Binding ForgotPasswordCommand}" TabIndex="3"/>
 
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Don't have an account?" Foreground="#272B2F"/>
-                <Button Content="Sign up" Style="{StaticResource linkBtn}" Margin="5, 2, 0, 0" Command="{Binding SignUpCommand}"/>
+                <Button Content="Sign up" Style="{StaticResource linkBtn}" Margin="5, 2, 0, 0" Command="{Binding SignUpCommand}" TabIndex="4"/>
             </StackPanel>
 
         </StackPanel>

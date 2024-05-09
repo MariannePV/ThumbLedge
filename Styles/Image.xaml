@@ -4,7 +4,7 @@
            TargetType="{x:Type Image}">
 
         <Setter Property="Margin"
-                Value="-400"/>
+                Value="-405"/>
 
         <Setter Property="IsHitTestVisible"
                 Value="False"/>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Prism.Commands;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,5 +25,10 @@ namespace ThumbLedge.Utilities
         }
         public bool CanExecute(object parameter) => _canExecute == null || _canExecute(parameter);
         public void Execute(object parameter) => _execute(parameter);
+
+        public static implicit operator DelegateCommand(RelayCommand v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
