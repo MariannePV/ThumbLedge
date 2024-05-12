@@ -28,12 +28,12 @@
                     <Grid.OpacityMask>
                         <VisualBrush Visual="{Binding ElementName=mask}"/>
                     </Grid.OpacityMask>
-                    <!--<MediaElement HorizontalAlignment="Left" Height="450" Width="800"
+                    <MediaElement HorizontalAlignment="Left" Height="450" Width="800"
                     VerticalAlignment="Top"  Source="{Binding BackgroundDashURL}"
                     Stretch="UniformToFill" LoadedBehavior="Play" MediaEnded="backgroundVideo_MediaEnded"
-                    SpeedRatio="0.5"/>-->
-                    <Image Source="../Images/staticVideo1.png" HorizontalAlignment="Left" Height="450" Width="800"
-                    VerticalAlignment="Top"/>
+                    SpeedRatio="0.5"/>
+                    <!--<Image Source="../Images/staticVideo1.png" HorizontalAlignment="Left" Height="450" Width="800"
+                    VerticalAlignment="Top"/>-->
                 </Grid>
             </Grid>
         </Border>

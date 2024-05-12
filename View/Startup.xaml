@@ -16,11 +16,11 @@
                     <Grid.OpacityMask>
                         <VisualBrush Visual="{Binding ElementName=mask}"/>
                     </Grid.OpacityMask>
-                    <!--<MediaElement Name="backgroundVideo" HorizontalAlignment="Left" Height="450" Width="800"
+                    <MediaElement Name="backgroundVideo" HorizontalAlignment="Left" Height="450" Width="800"
                     VerticalAlignment="Top"  Source="{Binding BackgroundURL}"
                     Stretch="UniformToFill" LoadedBehavior="Play" MediaEnded="backgroundVideo_MediaEnded"
-                    SpeedRatio="0.8"/>-->
-                    <Image Source="../Images/staticVideo2.png"/>
+                    SpeedRatio="0.8"/>
+                    <!--<Image Source="../Images/staticVideo2.png"/>-->
                 </Grid>
             </Grid>
         </Border>
