@@ -12,6 +12,7 @@ namespace ThumbLedge.Utilities
     {
         private readonly Action<object> _execute;
         private readonly Func<object, bool> _canExecute;
+        private ICommand prova;
 
         public event EventHandler CanExecuteChanged
         {
@@ -23,6 +24,12 @@ namespace ThumbLedge.Utilities
             _execute = execute;
             _canExecute = canExecute;
         }
+
+        public RelayCommand(ICommand prova)
+        {
+            this.prova = prova;
+        }
+
         public bool CanExecute(object parameter) => _canExecute == null || _canExecute(parameter);
         public void Execute(object parameter) => _execute(parameter);
 

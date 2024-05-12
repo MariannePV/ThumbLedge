@@ -29,7 +29,6 @@ namespace ThumbLedge.ViewModel
 
         StartupVM startupVM = new StartupVM();
         DashboardVM dashboardVM = new DashboardVM();
-        BrainVM brainVM = new BrainVM();
 
         public MainWindowVM()
         {
@@ -49,7 +48,8 @@ namespace ThumbLedge.ViewModel
 
         private void StartupVM_LoginClicked(object sender, EventArgs e)
         {
-            dashboardVM.ThumbLedgeView = brainVM;
+            dashboardVM.FillTreeView();
+            dashboardVM.SetBrain();
             MainView = dashboardVM;
         }
     }

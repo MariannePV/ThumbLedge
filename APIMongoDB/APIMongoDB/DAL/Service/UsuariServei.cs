@@ -71,17 +71,18 @@ namespace APIMongoDB.DAL.Service
         }
 
         //Eliminar usuari
-        public Usuari Delete(string email)
+        public int Delete(string email)
         {
             MongoServei MS = new MongoServei("usuaris");
-            List<Usuari> result = MS.usuariCollection.AsQueryable().Where(u => u.Email == email).ToList();
+            var result = MS.usuariCollection.DeleteOne(u => u.Email == email);
 
             try
             {
-                return result[0];
-            } catch (Exception)
+                return 1;
+            }
+            catch (Exception)
             {
-                return null;
+                return 0;
             }
         }
     }

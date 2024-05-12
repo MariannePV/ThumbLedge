@@ -28,7 +28,7 @@
 
         <TextBlock Grid.Row="1" Grid.Column="1" Text="Profile" Style="{StaticResource title}"/>
 
-        <TextBox Text="{Binding emailTxt}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource noEnabled}" HorizontalAlignment="Left" Width="508" TabIndex="0" IsEnabled="False" Margin="5, 0, 0, 0"/>
+        <TextBox Text="{Binding emailTxt}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource noEnabled}" HorizontalAlignment="Left" Width="508" TabIndex="0" Margin="5, 0, 0, 0"/>
         <TextBlock Grid.Row="2" Grid.Column="1" Text="Email" Style="{StaticResource placeholder}" Margin="21, 15, 0, 0"/>
 
         <TextBox Text="{Binding usernameTxt}" Grid.Row="3" Grid.Column="1" Style="{StaticResource txtBoxStyle}" Width="250" TabIndex="1"/>

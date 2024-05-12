@@ -8,6 +8,7 @@
         
         <ResourceDictionary>
             
+            <!--Recursos per als estils-->
             <ResourceDictionary.MergedDictionaries>
 
                 <ResourceDictionary Source="Styles/Button.xaml"/>
@@ -15,10 +16,15 @@
                 <ResourceDictionary Source="Styles/PasswordBox.xaml"/>
                 <ResourceDictionary Source="Styles/TextBlock.xaml"/>
                 <ResourceDictionary Source="Styles/Image.xaml"/>
+                <ResourceDictionary Source="Styles/TreeView.xaml"/>
+                <ResourceDictionary Source="Styles/ComboBox.xaml"/>
+                
+                <!--Recurs per al data template--> 
                 <ResourceDictionary Source="Utilities/DataTemplate.xaml"/>
                 
             </ResourceDictionary.MergedDictionaries>
 
+            <!--Conversor per passar per parametre més d'un valor-->
             <ut:MultiParameterConverter x:Key="MultiParameterConverter"/>
 
         </ResourceDictionary>      

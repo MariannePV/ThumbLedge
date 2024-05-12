@@ -38,7 +38,7 @@ namespace ThumbLedge.Entities
 
         public override string ToString()
         {
-            return String.Format ("id: {0}\nusername: {1}\npassword: {2}\nfull name: {3}\nemail: {4}", this._id, this.Username, this.Password, this.FullName, this.Email);
+            return String.Format("id: {0}\nusername: {1}\npassword: {2}\nfull name: {3}\nemail: {4}", this._id, this.Username, this.Password, this.FullName, this.Email);
         }
     }
 }

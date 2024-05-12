@@ -3,6 +3,8 @@
                     xmlns:vm="clr-namespace:ThumbLedge.ViewModel"
                     xmlns:view="clr-namespace:ThumbLedge.View">
 
+    <!--Relaccionem tots els ViewModel amb els seus Views dels UserControl-->
+    
     <DataTemplate DataType="{x:Type vm:StartupVM}">
         <view:Startup/>
     </DataTemplate>
@@ -33,6 +35,26 @@
 
     <DataTemplate DataType="{x:Type vm:ProfileVM}">
         <view:Profile/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:ConeixementVM}">
+        <view:Coneixement/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:AddKnowledgeVM}">
+        <view:AddKnowledge/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:AddKnowledgeValueVM}">
+        <view:AddKnowledgeValue/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:EditarDescVM}">
+        <view:EditarDesc/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:IntelligenceInfoVM}">
+        <view:IntelligenceInfo/>
     </DataTemplate>
 
 </ResourceDictionary>

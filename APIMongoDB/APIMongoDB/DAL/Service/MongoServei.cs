@@ -11,6 +11,8 @@ namespace APIMongoDB.DAL.Service
     {
         private MongoClient mongoClient;
         public IMongoCollection<Usuari> usuariCollection { get; set; }
+        public IMongoCollection<Coneixement> coneixementCollection { get; set; }
+        public IMongoCollection<Intelligence> intelligenceCollection { get; set; }
 
         public MongoServei(string collection)
         {
@@ -20,6 +22,12 @@ namespace APIMongoDB.DAL.Service
             if (collection == "usuaris")
             {
                 usuariCollection = database.GetCollection<Usuari>(collection);
+            } else if (collection == "coneixements")
+            {
+                coneixementCollection = database.GetCollection<Coneixement>(collection);
+            } else if (collection == "inteligencies")
+            {
+                intelligenceCollection = database.GetCollection<Intelligence>(collection);
             }
         }
     }

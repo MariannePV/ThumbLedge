@@ -9,23 +9,31 @@
     <Grid>
         <Image Source="{Binding ImageSource}" Style="{StaticResource imgStyle}"/>
          
-        <!--Blau-->        
-        <Button Content="LÒGICO-MATEMÀTICA" Margin="-300, -110, 0, 0" Style="{StaticResource logicoMat}"/>
-        <Button Content="LINGÜÍSTICA" Margin="-350, 70, 0, 0" Style="{StaticResource linguistica}"/>
-        <Button Content="CINÈTICA-CORPORAL" Margin="-100, -250, 0, 0" Style="{StaticResource cineticaCorp}"/>
+        <!--Blau-->
+        <Button Content="LOGICAL-MATHEMATICAL" Margin="-300, -110, 0, 0" Style="{StaticResource logicoMat}"
+                Command="{Binding IntelligenceCommand}" CommandParameter="Logical-Mathematical"/>
+        <Button Content="LINGUISTIC" Margin="-350, 70, 0, 0" Style="{StaticResource linguistica}"
+                Command="{Binding IntelligenceCommand}" CommandParameter="Linguistic"/>
+        <Button Content="BODILY-KINESTHETIC" Margin="-100, -250, 0, 0" Style="{StaticResource cineticaCorp}"
+                Command="{Binding IntelligenceCommand}" CommandParameter="Bodily-Kinesthetic"/>
 
          
         <!--Groc-->         
-        <Button Content="INTERPERSONAL" Margin="150, -50, 0, 0" Style="{StaticResource interpersonal}"/>
-        <Button Content="INTRAPERSONAL" Margin="310, -170, 0, 0" Style="{StaticResource intrapersonal}"/>
+        <Button Content="INTERPERSONAL" Margin="150, -50, 0, 0" Style="{StaticResource interpersonal}"
+                Command="{Binding IntelligenceCommand}" CommandParameter="Interpersonal"/>
+        <Button Content="INTRAPERSONAL" Margin="310, -170, 0, 0" Style="{StaticResource intrapersonal}"
+                Command="{Binding IntelligenceCommand}" CommandParameter="Intrapersonal"/>
 
          
         <!--Vermell-->         
-        <Button Content="ESPAIAL" Margin="400, 200, 0, 0" Style="{StaticResource espaial}"/>
+        <Button Content="SPATIAL" Margin="400, 200, 0, 0" Style="{StaticResource espaial}"
+                Command="{Binding IntelligenceCommand}" CommandParameter="Spatial"/>
 
          
         <!--Verd-->         
-        <Button Content="MUSICAL" Margin="-80, 200, 0, 0" Style="{StaticResource musical}"/>
-        <Button Content="NATURALISTA" Margin="150, 100, 0, 0" Style="{StaticResource naturalista}"/>
+        <Button Content="MUSICAL" Margin="-80, 200, 0, 0" Style="{StaticResource musical}"
+                Command="{Binding IntelligenceCommand}" CommandParameter="Musical"/>
+        <Button Content="NATURALIST" Margin="150, 100, 0, 0" Style="{StaticResource naturalista}"
+                Command="{Binding IntelligenceCommand}" CommandParameter="Naturalist"/>
     </Grid>
 </UserControl>
