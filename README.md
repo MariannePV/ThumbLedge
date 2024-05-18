@@ -1,7 +1,6 @@
 <!-- Logo -->
 <p align="center">
-  <img width="80%" src="https://github.com/MariannePV/ThumbLedge/assets/131476041/82647116-14d7-4dd4-b0ba-d468e692c41f" alt="logo_ThumbLedge_white">
-</p>
+  <img width="80%" src="https://github.com/MariannePV/ThumbLedge/assets/131476041/8c89638f-11f6-42ba-aa7a-b57bc9fd3fc4" alt="Logo">
 
 <!-- Manual d'usuari -->
 # Introducció
