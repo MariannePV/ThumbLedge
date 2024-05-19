@@ -178,11 +178,101 @@ Amb aquestes conclusions, es pot enfocar i programar l'estudi i obtenció dels c
 Mitjançant la part esquerra de la pantalla del programa, es gestionen tots els coneixements indiferentment de la intel·ligència a la qual s'associen.
 
 <p align="left">
-  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/ae4c9b6f-7776-4325-ae39-95b2bae92fde" alt="inteligences dashboard">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/e103aa2a-61bc-4f09-9ef8-8ab9770deb3f" alt="llistat coneixements">
 </p>
 
+1. Botó per afegir més coneixements
+2. Llistat amb tots els coneixments creats
+
+### Afegir coneixements
+
+És fa prement el botó amb el símbol de + (1) que es troba al costat de la paraula `Knowledges` a la part superior del llistat.
+
+<p align="left">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/7022bff9-1a66-4662-b3ca-9d59c2d56623" alt="llistat coneixements">
+</p>
+
+1. Camp per assignar el nom al coneixement
+2. Desplegable per seleccionar l'intel·ligència a la qual associarem el coneixement
+3. Camp per afegir una descripció al coneixement
+4. Botó per desar els canvis i afegir el coneixement
+
+Bàsicament aquesta finestra serveix per afegir un nou coneixement del qual es vol mantenir un següiment. El procés és molt senzill, en el camp 1 s'afegeix el nom que se li vol assignar al coneixement, aquest nom ha de ser únic dins el camp dels coneixements. Llavors, en el desplegable (2), se selecciona la intel·ligència a la qual volem associar el coneixement. Si no saps com fer-ho consulta l'apartat [Relació coneixement - intel·ligència]() on s'explica amb més exactitud com relacionar els diferents coneixements amb les diferents intel·ligències. Llavors, també es pot afegir una petita descripció al coneixement mitjançant el camp 3, tot i que no es obligatori emplenar aquest camp i, finalment, si no hi ha cap error en les dades inserides, es mostrarà el següent missatge `The knowledge was succesfully created.` i el llistat de coneixements de la part esquerra del programa s'actualitzarà automàticament afegint el nou coneixement.
+
+En cas de que hi hagi incidències en la inserció del coneixement, es mostraran amb els següents missatges:
+- `You have to assign a name and an intelligence to the knowledge.`: En el cas de que o el nom del coneixement o l'assignació de l'intel·ligència estiguin buits.
+- `This knowledge name is already registered. Try another one.`: En el cas de que el nom del coneixement ja estigui registrat.
+
+#### Relació coneixement - intel·ligència
+
+La definició d'intel·ligències d'aquest programa es basa en la teoria de les intel·ligències múltiples plantejada per Howard Gardner, on s'exposa que cada ésser humà presenta més d'un tipus diferent d'intel·ligència. Llavors, per associar un coneixement a una intel·ligència és important entendre les característiques d'aquesta:
+1. `Linguistic` (Lingüística):
+    - **Característiques**: Habilitat per utilitzar el llenguatge de manera efectiva, tant en forma escrita com oral.
+    - **Exemples**: Escriptura creativa, poesia, narració d'històries, retòrica, periodisme, aprenentatge d'idiomes...
+2. `Logical-Mathematical` (Lògica-Matemàtica):
+    - **Característiques**: Capacitat per al raonament lògic, l'anàlisi de problemes i el pensament abstracte.
+    - **Exemples**: Matemàtiques, programació, resolució de problemes lògics, economía...
+3. `Bodily-Kinesthetic` (Corporal-Cinestèsica):
+    - **Característiques**: Habilitat per utilitzar el cos de manera efectiva per expressar idees i sentiments, així com per produir o transformar coses.
+    - **Exemples**: Dansa, actuació, esports, arts marcials...
+4. `Intrapersonal` (Intrapersonal):
+    - **Característiques**: Capacitat per comprendre's a un mateix, reconèixer les pròpies emocions, motivacions i objectius.
+    - **Exemples**: Auto-reflexió, meditació, planificació personal, desenvolupament personal...
+5. `Interpersonal` (Interpersonal):
+    - **Característiques**: Capacitat per entendre i respondre als sentiments, motivacions i desitjos d'altres persones.
+    - **Exemples**: Psicologia, ensenyament, màrqueting...
+6. `Musica` (Musical):
+    - **Característiques**: Sensibilitat per als ritmes, tons i sons. Capacitat per crear i apreciar la música.
+    - **Exemples**: Composició musical, estudi d'algun instrument, cant...
+7. `Naturalist` (Naturalista):
+    - **Característiques**: Habilitat per reconèixer i categoritzar objectes i patrons en la natura.
+    - **Exemples**: Biologia, ecologia, zoologia, agricultura...
+8. `Spatial` (Espacial):
+    - **Característiques**: Habilitat per visualitzar i manipular objectes i espais en la ment.
+    - **Exemples**: Arquitectura, disseny gràfic, art...
+
+### Relacionar coneixements
+
+Una funcionalitat que aporta el programa és el fet de deixar llibertat total a que es relacionin els coneixements com plagui. Això s'aconsegueix seleccionant un coneixement del llistat i arrossegant-lo dins un altre coneixement:
+
+![RelateKnowledges](https://github.com/MariannePV/ThumbLedge/assets/131476041/697a1ba9-d816-44f3-86c9-5dbc82d8b07e)
+
+Aquesta relació no té cap altre funcionalitat a part de la de permetre a l'usuari un total control sobre la relació i organització dels seus coneixements.
+
+## Panell de gestió dels coneixements
+
+En polsar sobre el nom de qualsevol coneixement de la llista, automàticament a la part dreta del programa, s'obrirà el seu panell corresponent:
+
+<p align="left">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/34c9c21a-14f4-4a6e-8004-b938a6f95cb2" alt="panell coneixements">
+</p>
+
+1. Nom del coneixement seleccionat
+2. Botó per editar el coneixement
+3. Botó per afegir valor al coneixement
+4. Descripció associada al coneixement
+5. Gràfic generat segons els valors associats al coneixement
+
+Bàsicament en aquest panell es mostra tota la informació relativa a aquest coneixement. La descripció es pot editar accedint a [l'apartat d'edició]() mitjançant el botó 2 i es pot [afegir més valors a la gràfica]() mitjançant el botó 3. Tot i això, d'aquesta gràfica podem treure diverses conclusions:
+- La constància amb la qual es treballa el coneixement
+- L'evolució de l'obtenció d'aquest coneixement
+- Com és el nostre procés d'aprenentatge d'aquest coneixement
+
+> [!IMPORTANT]
+> Els valors associats a cada coneixement no tenen una finalitat real ni quantificable, unicament serveixen com a guía per orientar a l'usuari què tant s'ha treballat en el coneixement.
+
+### Edició d'un coneixement
+
+<p align="left">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/ba5a2504-b43d-41a4-9ae4-f8727cd0158e" alt="edició coneixements">
+</p>
+
+1. Botó per eliminar el coneixement sobre el qual s'està treballant
+2. Botó per tornar al panell de gestió del coneixement
+3. Camp per editar la descripció del coneixement
+4. Botó per actualitzar la descripció del coneixement
 
 
 
-
+### Afegir valors a un coneixement
 
