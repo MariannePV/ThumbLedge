@@ -24,7 +24,7 @@ En iniciar el programa es mostra aquesta senzilla interfície composta per tres 
 En prémer el botó 3 de la pàgina anterior (START), accedim a aquesta on es demanen les nostres credencials d'usuari per accedir al programa. 
 
 <p align="left">
-  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/a10bbeae-1789-486f-a9c4-13905d1065ce" alt="login page">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/a10bbeae-1789-486f-a9c4-13905d1065ce" alt="log in page">
 </p>
 
 1. Camp per inserir el nom d'usuari
@@ -41,5 +41,15 @@ En tot cas, si hi ha alguna errada i/o incidència amb les credencials, es mostr
 - En cas de que no s'hagi pogut autentificar correctament l'usuari (`Username` i/o `Password` son incorrectes).
 
 ## Sign up - Creació d'un nou usuari
+Des de la pàgina de Log in, prement el botó 5 (Sign up) accedim a la pàgina de creació d'usuari.
+
+<p align="left">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/4e23e297-8b44-430a-a0ba-69a7be982b1f" alt="sign in page">
+</p>
+
+1. Camp per inserir el nom d'usuari
+2. Camp per inserir el nom complert
+3. Camp per inserir la constrasenya
+4. Camp per inserior 
 
 ## Forgoten password - Contrasenya oblidada
