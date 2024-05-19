@@ -42,7 +42,7 @@ En prémer el botó 3 de la pàgina anterior (START), accedim a aquesta on es de
 ### Procés d'inici de sessió
 <p align="justify">
 
-  Per iniciar sessió és important haver [creat prèviament un usuari](https://github.com/MariannePV/ThumbLedge/edit/main/README.md#sign-up---creaci%C3%B3-dun-nou-usuari).
+  Per iniciar sessió és important haver [creat prèviament un usuari](https://github.com/MariannePV/ThumbLedge/blob/main/README.md#sign-up---creaci%C3%B3-dun-nou-usuari).
   
 </p>
 
