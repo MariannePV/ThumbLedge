@@ -136,5 +136,53 @@ De totes maneres, per realment desar les noves dades actualitzades, s'ha de pré
 
 ## Menú d'intel·ligències
 
+La pàgina que es mostra per defecte en iniciar sessió i a la qual podem accedir en qualsevol moment mirjançant el botó que s'indica en la imatge que hi ha a continuació:
+
+<p align="left">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/91544f68-d3a9-4aa9-a47d-0744391f117e" alt="inteligences">
+</p>
+
+Cada un dels noms correspón a un botó que en ser polsat, t'envia al [panell informatiu]() de la intel·ligència en qüestió.
+
+<p align="left">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/aaeb76b9-2967-4727-9011-27f6ba9e4ee1" alt="inteligences btns">
+</p>
+
+### Panell informatiu de les intel·ligències
+
+S'accedeix a aquest panell polsant el botó corresponent a la intel·ligència a la qual es vol accedir des del [menú d'intel·ligències]().
+
+<p align="left">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/f4aba6ac-6398-4df5-a326-877da1790f73" alt="inteligences dashboard">
+</p>
+
+1. Nom de l'intel·ligència
+2. El coneixement que té més valors associats de la intel·ligència
+3. L'últim coneixement creat associat a la intel·ligència
+4. Gràfic comparatiu del progrés dels coneixements associats a la intel·ligència
+
+Bàsicament en aquest panell es mostra informació d'interés relativa a l'intel·ligència. És important tenir en compte que tots els coneixements que es mostren, són aquells associats a la intel·ligència en qüestió.
+
+Els dos primers camps (2 i 3) són informatius, per així saber quin és l'últim coneixement relatiu a la intel·ligència que s'ha a afegit i quin és el coneixement més treballat (el que més valors té). Tot i això, l'apartat més important d'aquest panell probablement és el gràfic comparatiu de l'evolució de les intel·ligències (4), ja que d'aquest gràfic i del seu anàlisi podem treure diverses conclusions tals com:
+- Quin és el coneixement amb més valors associats
+- La freqüència amb la qual s'han treballat els coneixements
+- El progrés i evolució del coneixement
+
+Amb aquestes conclusions, es pot enfocar i programar l'estudi i obtenció dels coneixements per així treure'n el màxim profit.
+
+> [!IMPORTANT]
+> Els valors associats a cada coneixement no tenen una finalitat real ni quantificable, unicament serveixen com a guía per orientar a l'usuari què tant s'ha treballat en el coneixement.
+
+## Gestió de coneixements
+
+Mitjançant la part esquerra de la pantalla del programa, es gestionen tots els coneixements indiferentment de la intel·ligència a la qual s'associen.
+
+<p align="left">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/ae4c9b6f-7776-4325-ae39-95b2bae92fde" alt="inteligences dashboard">
+</p>
+
+
+
+
 
 
