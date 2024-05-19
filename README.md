@@ -6,7 +6,9 @@
 # Introducció
 Benvingut/da al manual d'usuari de ThumbLedge, una innovadora eina dissenyada per posar el control del teu coneixement directament a les teves mans. Aquest manual t'acompanyarà a través de les diferents funcionalitats i característiques del programa, proporcionant-te una guia detallada per aprofitar al màxim aquesta plataforma educativa única.
 
-#Accés al programa
+# Accés al programa
+A continuació es mostren totes les indicacions per crear un nou usuari, iniciar sessió amb aquest i sol·licitar assistència davant qualsevol incidència.
+
 ## Startup page - Primera pàgina
 En iniciar el programa es mostra aquesta senzilla interfície composta per tres botons i el logo del programa.
 
