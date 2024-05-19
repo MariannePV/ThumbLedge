@@ -50,6 +50,20 @@ Des de la pàgina de Log in, prement el botó 5 (Sign up) accedim a la pàgina d
 1. Camp per inserir el nom d'usuari
 2. Camp per inserir el nom complert
 3. Camp per inserir la constrasenya
-4. Camp per inserior 
+4. Camp per inserir el correu electrònic
+5. Botó per crear el nou usuari
+6. Botó per tornar a la pàgina d'inici de sessió
+
+### Procés de creació d'usuari
+Per tal de crear un nou usuari s'han d'emplenar tots els camps amb la respectiva informació:
+- `Username`: Nom per a l'usuari
+- `Full Name`: Nom complert de l'usuari
+- `Password`: Contrasenya per al compte d'usuari
+- `Email`: Compte de correu associat al compte
+
+> [!IMPORTANT]
+> Cada compte de ThumbLedge té un únic correu electrònic associat. Un amteix correu electrònic no pot estar associat a més d'un compte.
+
+Després d'emplenar tots els camps, s'ha de polsar el botó 5 (Sign up) per així validar la creació de l'usuari. Si tot surt bé es mostrarà el següent missatge per pantalla `The account was succesfully created. Redirecting to log in.` i automàticament es redirigirà a la pàgina de log in. En cas d'haver alguna incidència en les dades, 
 
 ## Forgoten password - Contrasenya oblidada
