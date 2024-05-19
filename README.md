@@ -89,3 +89,52 @@ Des de la pàgina de Log in, prement el botó 4 (Forgot password?) accedim a la 
 En aquesta pàgina es mostra un missatge informatiu del correu electrònic al qual adreçar-se davant qualsevol incidència. El correu electrònic és el següent: mpulgar.dam@institutcampalans.net i les incidències es tractaran segons ordre d'arribada i el més ràpid possible.
 
 Des d'aquesta pàgina, es pot accedir directament a la pàgina d'inici de sessió mitjançant el botó 1 (Log in) o a la de creació d'usuari amb el botó 2 (Sign up).
+
+# ThumbLedge - Pàgines de gestió del coneixement
+Un cop s'ha iniciat la sessió amb èxit es mostrarà la pàgina inicial del programa.
+
+<p align="left">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/b1217532-5dc4-462e-8e73-85973c198b55" alt="thumbledge page">
+</p>
+
+La part superior d'aquesta pàgina no varia mai, sempre manté els mateixos botons i en la mateixa posició (1, 2). En canvi, la part 3 sempre correspón al llistat de coneixements que l'usuari té associats, tot i aixó el contingut d'aquest llistat és dinàmic ja que depén dels coneixements que l'usuari crei, elimini o editi. Finalment, la part 4 canvia constantment segons les interaccions de l'usuari amb el programa.
+
+## Tancar sessió
+<p align="left">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/1f4272df-24e2-4856-80dc-75c4d1c86ebc" alt="sign out">
+</p>
+
+Des de qualsevol part del programa, sempre es tindrà accés al botó per tancar la sessió. Si es prem, automàticament es tancarà la sessió de l'usuari i es redirigirà a la pàgina de log in.
+
+## Perfil d'usuari
+<p align="left">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/408bd82b-cd4c-4fc3-b39b-97b47763dcb9" alt="user profile">
+</p>
+
+Per accedir al perfil de l'usuari s'ha de prèmer el botó indicat en l'imatge superior i es mostrarà l'informació de l'usuari per pantalla.
+
+<p align="left">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/c9646480-e082-4004-beff-889ccc08ffdd" alt="user profile - info">
+</p>
+
+1. Correu electrònic associat al compte
+2. Nom d'usuari
+3. Nom complert
+4. Camp per inserir la contrasenya actual
+5. Camp per inserir la nova contrasenya
+6. Botó per actualitzar les dades del perfil
+
+En el camp del correu electrònic (1), es mostra quin és l'associat al compte d'usuari. En el cas dels camps 2 i 3, es mostren el nom d'usuari i nom complerts actuals respectivament. Aquests dos camps es poden actualitzar amb l'única restricció que el nom d'usuari ha de complir els mateixos paràmetres que en la pàgina de [creació d'usuari](https://github.com/MariannePV/ThumbLedge/blob/main/README.md#sign-up---creaci%C3%B3-dun-nou-usuari), és a dir, ha de ser únic i només pot incloure lletres minúscules, números i els caràcters . - _.
+
+Els camps relatius a la contrasenya es mostren buits ja que serveixen per a canviar la contrasenya de l'usuari. Per fer-ho, en el camp 5 s'ha d'inserir la contrasenya actual de l'usuari i en el camp 6 la nova contrasenya que es vol associar. En el cas de que la contrasenya actual realment correspongui amb la de l'usuari en el moment de fer l'actualització, el canvi de contrasenya es durà a terme amb èxit.
+
+De totes maneres, per realment desar les noves dades actualitzades, s'ha de prémer el botó 6 (Update) i si no es produeix cap incidència es mostrarà el següent missatge per pantalla, indicant la correcta actualització de les dades: `The data was succesfully updated.`. En qualsevol cas, davant una incidència es mostra un missatge indicant què ha fallat:
+- `The fields for username and full name are mandatory and must be filled out.`: En el cas de que el camp de `Username` o el de `Full Name` es trobin buits.
+- `The username only allows lowercase, numbers and the following characters: . - _.`: Si el nom d'usuari introduit no compleix els paràmetres establerts.
+- `The username is not available. Try anothe one.`: Si el nou nom d'usuari introduit ja està registrat en un altre compte i, per tant, no està disponible.
+- `The current password entered does not match the user's existing password.`: En el cas de que s'estigui intentant actualitzar la contrasenya si el camp de `Current password` no coincideix amb la contrasenya actual de l'usuari.
+
+## Menú d'intel·ligències
+
+
+
