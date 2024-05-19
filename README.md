@@ -4,14 +4,10 @@
 
 <!-- Manual d'usuari -->
 # Introducció
-<p align="justify">
 Benvingut/da al manual d'usuari de ThumbLedge, una innovadora eina dissenyada per posar el control del teu coneixement directament a les teves mans. Aquest manual t'acompanyarà a través de les diferents funcionalitats i característiques del programa, proporcionant-te una guia detallada per aprofitar al màxim aquesta plataforma educativa única.
-</p>
 
 ## Startup page
-<p align="justify">
 En iniciar el programa es mostra aquesta senzilla interfície composta per tres botons i el logo del programa.
-</p>
 
 <p align="left">
   <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/0e9dc4e8-26bc-4c27-bd3e-470f6f2e2bbb" alt="first page">
@@ -25,9 +21,7 @@ En iniciar el programa es mostra aquesta senzilla interfície composta per tres 
 > Els botons 1 i 2 es troben a totes les pàgines del programa, sempre amb el mateix aspecte i funcionalitat.
 
 ## Log in - Inici de sessió
-<p align="justify">
 En prémer el botó 3 de la pàgina anterior (START), accedim a aquesta on es demanen les nostres credencials d'usuari per accedir al programa. 
-</p>
 
 <p align="left">
   <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/a10bbeae-1789-486f-a9c4-13905d1065ce" alt="login page">
@@ -40,11 +34,11 @@ En prémer el botó 3 de la pàgina anterior (START), accedim a aquesta on es de
 5. Botó per accedir a la pàgina per donar-se d'alta en el programa en cas de no tenir un usuari
 
 ### Procés d'inici de sessió
-<p align="justify">
-
-  Per iniciar sessió és important haver [creat prèviament un usuari](https://github.com/MariannePV/ThumbLedge/blob/main/README.md#sign-up---creaci%C3%B3-dun-nou-usuari).
-  
-</p>
+Per iniciar sessió és important haver [creat prèviament un usuari](https://github.com/MariannePV/ThumbLedge/blob/main/README.md#sign-up---creaci%C3%B3-dun-nou-usuari). Llavors, amb les credencials de l'usuari, inserirem en el camp `Username` el nom d'usuari i en el camp `Password` la contrasenya associada a l'usuari. Per fer l'inici de sessió s'ha de premer el botó número 3 (Log in) i si les credencials són correctes, accedirem a la pàgina principal del programa.
+En cas de no recordar la contrasenya o de que hi hagi un error amb les credencials d'un usuari existent, s'ha de prèmer el botó 4 per accedir a la [pàgina amb les intruccions](https://github.com/MariannePV/ThumbLedge?tab=readme-ov-file#forgoten-password---contrasenya-oblidada) que s'han de seguir en aquests casos.
+En tot cas, si hi ha alguna errada i/o incidència amb les credencials, es mostrarà el següent missatge indicant-ho: `We couldn't log in. Check your username and password.`. Aquest missatge es mostra davant les següents situacions:
+- Si els camps de `Username` i/o `Password` estan buits.
+- En cas de que no s'hagi pogut autentificar correctament l'usuari (`Username` i/o `Password` son incorrectes).
 
 ## Sign up - Creació d'un nou usuari
 
