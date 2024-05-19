@@ -35,7 +35,7 @@ En prémer el botó 3 de la pàgina anterior (START), accedim a aquesta on es de
 
 ### Procés d'inici de sessió
 Per iniciar sessió és important haver [creat prèviament un usuari](https://github.com/MariannePV/ThumbLedge/blob/main/README.md#sign-up---creaci%C3%B3-dun-nou-usuari). Llavors, amb les credencials de l'usuari, inserirem en el camp `Username` el nom d'usuari i en el camp `Password` la contrasenya associada a l'usuari. Per fer l'inici de sessió s'ha de premer el botó número 3 (Log in) i si les credencials són correctes, accedirem a la pàgina principal del programa.
-En cas de no recordar la contrasenya o de que hi hagi un error amb les credencials d'un usuari existent, s'ha de prèmer el botó 4 per accedir a la [pàgina amb les intruccions](https://github.com/MariannePV/ThumbLedge?tab=readme-ov-file#forgoten-password---contrasenya-oblidada) que s'han de seguir en aquests casos.
+En cas de no recordar la contrasenya o de que hi hagi un error amb les credencials d'un usuari existent, s'ha de prèmer el botó 4 per accedir a la [pàgina amb les instruccions](https://github.com/MariannePV/ThumbLedge?tab=readme-ov-file#forgoten-password---contrasenya-oblidada) que s'han de seguir en aquests casos.
 En tot cas, si hi ha alguna errada i/o incidència amb les credencials, es mostrarà el següent missatge indicant-ho: `We couldn't log in. Check your username and password.`. Aquest missatge es mostra davant les següents situacions:
 - Si els camps de `Username` i/o `Password` estan buits.
 - En cas de que no s'hagi pogut autentificar correctament l'usuari (`Username` i/o `Password` son incorrectes).
