@@ -272,7 +272,31 @@ Bàsicament en aquest panell es mostra tota la informació relativa a aquest con
 3. Camp per editar la descripció del coneixement
 4. Botó per actualitzar la descripció del coneixement
 
+![remove knowledge](https://github.com/MariannePV/ThumbLedge/assets/131476041/891f5975-38de-429b-9fce-f3f0b515aaad)
 
+Per tal d'eliminar el coneixement s'ha de prèmer el botó 1 i, en cas de que s'elimini correctament, es mostrarà el missatge `The knowledge was succesfully removed.`, el llistat de coneixements s'actualitzarà i es mostrarà el menú d'intel·ligències per pantalla. En tot cas, si el coneixement té algun coneixement associat, no es permetrà eliminar-lo i es mostrarà el següent missatge: `You can't remove a knowledge if it has attached knowledges.`.
+
+Quant a actualitzar la descripció del coneixement, només s'ha d'editar el camp 3 i, un cop satisfet amb la nova descripció, prèmer el botó 4 (Update) per així desar els canvis, per pantalla es mostrarà `The data was succesfully updated.` confirmant la correcta actualització de les dades.
 
 ### Afegir valors a un coneixement
 
+<p align="left">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/19e9406c-e411-4a83-84f4-a9cb6e2c489b" alt="afegir valors coneixements">
+</p>
+
+1. Botó per tornar al panell de gestió del coneixement
+2. Selector del valor de coneixement que es vol afegir
+3. Botó per registrar el nou valor
+
+Per mantenir un control sobre l'evolució en l'aprenentatge del coneixement, s'han establert 5 valors diferents:
+
+<p align="left">
+  <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/476c8eb7-9629-4f5c-8db1-b7ef1a60726d" alt="valors coneixements">
+</p>
+
+Bàsicament, per afegir valor al coneixement, hem de seleccionar una de les 5 opcions segons creiem que hem avançat o retrocedit en el coneixement. Els números per sota de 0 (-10 i -5), representen una pèrdua del coneixement, mentre que els que están per sobre de 0 (5 i 10), representen un guany. El valor `No change (0)`, no representa cap canvi sobre el coneixement.
+
+Un cop seleccionat el valor que volem afegir, s'ha de prémer el botó 3 i es registrarà el nou valor en el coneixement. Automàticament el valor es veurà reflectit en el gràfic del associat al coneixement.
+
+> [!TIP]
+> El número assignat a cada opció, no té un valor realment quantificable, només serveix per a mantenir un registre de quant es perceb que s'ha aprés o s'ha deixat d'aprendre del coneixement. Això vol dir que, un valor total de 200 en un coneixement i un valor total de 50 en un altre, només indicarà que probablement s'ha treballat més en el primer i/o s'ha notat més progrés. No hi ha un total que indiqui si se sap molt o no d'un coneixement, ja que el coneixement és relatiu i personal per a cada usuari.
