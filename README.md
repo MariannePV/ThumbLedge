@@ -186,7 +186,7 @@ Mitjançant la part esquerra de la pantalla del programa, es gestionen tots els 
 
 ### Afegir coneixements
 
-És fa prement el botó amb el símbol de + (1) que es troba al costat de la paraula `Knowledges` a la part superior del llistat.
+Es fa prement el botó amb el símbol de + (1) que es troba al costat de la paraula `Knowledges` a la part superior del llistat.
 
 <p align="left">
   <img src="https://github.com/MariannePV/ThumbLedge/assets/131476041/7022bff9-1a66-4662-b3ca-9d59c2d56623" alt="llistat coneixements">
